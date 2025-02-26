@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    flex-direction: column;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh; 
+    background-color: #f0f0f0; 
+}
+
+h1 {
+    color: #333; 
+    margin-bottom: 40px;
+    margin-top: -20px;
+}
+
+.game-container{
+    background-color: #fff; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    background-color: rgba(68, 155, 118, 0.911);
+    text-align: center;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 80px); 
+    grid-gap: 2vmin 2vmin;
+    align-items: center;
+    justify-content: center;   
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 50px; 
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; 
+    background-color: white; 
+}
+
+.cell:hover {
+    background-color: #b8b1b1;
+}
+
+.cell.x {
+    color: #e74c3c; 
+}
+
+.cell.o {
+    color: #3498db; 
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+}
+
+#resetButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(76, 233, 76); 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#resetButton:hover {
+    background-color: #45a049;
+}
