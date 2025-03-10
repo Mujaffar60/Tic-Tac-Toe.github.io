@@ -1,0 +1,8 @@
+@media only screen and (max-width: 600px){
+    body{
+        height: 92vh;
+    }
+    .game-container{
+        width: 99%;
+    }
+}
